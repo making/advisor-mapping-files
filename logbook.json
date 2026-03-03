@@ -1,0 +1,363 @@
+{
+  "slug" : "logbook",
+  "coordinates" : [
+    "org.zalando:logbook-okhttp",
+    "org.zalando:logbook-test",
+    "org.zalando:logbook-jdkserver",
+    "org.zalando:logbook-netty",
+    "org.zalando:logbook-api",
+    "org.zalando:logbook-jaxrs",
+    "org.zalando:logbook-ktor",
+    "org.zalando:logbook-spring-boot-starter",
+    "org.zalando:logbook-json-jackson2",
+    "org.zalando:logbook-openfeign",
+    "org.zalando:logbook-httpclient",
+    "org.zalando:logbook-spring-webflux",
+    "org.zalando:logbook",
+    "org.zalando:logbook-httpclient5",
+    "org.zalando:logbook-common",
+    "org.zalando:logbook-spring",
+    "org.zalando:logbook-ktor-client",
+    "org.zalando:logbook-ktor-common",
+    "org.zalando:logbook-spring-boot-webflux-autoconfigure",
+    "org.zalando:logbook-servlet",
+    "org.zalando:logbook-parent",
+    "org.zalando:logbook-logstash",
+    "org.zalando:logbook-bom",
+    "org.zalando:logbook-okhttp2",
+    "org.zalando:logbook-core",
+    "org.zalando:logbook-ktor-server",
+    "org.zalando:logbook-json",
+    "org.zalando:logbook-spring-boot-autoconfigure"
+  ],
+  "repositoryUrl" : "https://github.com/zalando/logbook",
+  "rewrite" : {
+    "2.14.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "2.15.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "reactor-netty" : "1.0.x",
+          "spring-framework" : "5.3.x",
+          "spring-security" : "5.5.x",
+          "spring-boot" : "2.5.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "2.15.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "2.16.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "5.3.x",
+          "spring-security" : "5.8.x",
+          "spring-boot" : "2.7.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "2.16.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.0.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "5.3.x",
+          "spring-security" : "5.8.x",
+          "spring-boot" : "2.7.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.0.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.1.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-boot" : "3.0.x",
+          "spring-security" : "6.0.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.1.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.2.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.2.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.3.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.3.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.4.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.4.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.5.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.5.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.6.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.6.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.7.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.0.x",
+          "spring-security" : "6.1.x",
+          "spring-boot" : "3.1.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.7.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.8.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.1.x",
+          "spring-boot" : "3.2.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.8.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.9.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "3.1.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.1.x",
+          "spring-boot" : "3.2.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.9.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.10.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "4.0.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.1.x",
+          "spring-boot" : "3.2.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.10.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.11.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "4.0.x",
+          "reactor-netty" : "1.1.x",
+          "spring-framework" : "6.1.x",
+          "spring-boot" : "3.3.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.11.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "3.12.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "4.0.x",
+          "reactor-netty" : "1.2.x",
+          "spring-framework" : "6.2.x",
+          "spring-boot" : "3.4.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "3.12.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "4.0.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 8
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "4.0.x",
+          "reactor-netty" : "1.2.x",
+          "spring-framework" : "6.2.x",
+          "spring-boot" : "3.5.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "4.0.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : null,
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "jakartaee-rest" : "4.0.x",
+          "reactor-netty" : "1.3.x",
+          "spring-framework" : "7.0.x",
+          "spring-boot" : "4.0.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    }
+  }
+}

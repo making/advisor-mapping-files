@@ -1,0 +1,121 @@
+{
+  "slug" : "datasource-micrometer",
+  "coordinates" : [
+    "net.ttddyy.observation:datasource-micrometer-parent",
+    "net.ttddyy.observation:datasource-micrometer-bom",
+    "net.ttddyy.observation:datasource-micrometer-docs",
+    "net.ttddyy.observation:datasource-micrometer",
+    "net.ttddyy.observation:datasource-micrometer-opentelemetry",
+    "net.ttddyy.observation:datasource-micrometer-spring-boot"
+  ],
+  "repositoryUrl" : "https://github.com/jdbc-observations/datasource-micrometer",
+  "rewrite" : {
+    "1.0.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "1.1.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.0.x",
+          "spring-framework" : "5.3.x",
+          "spring-boot" : "3.0.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "1.1.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "1.2.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.4.x",
+          "spring-framework" : "5.3.x",
+          "spring-boot" : "3.4.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "1.2.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "1.3.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.5.x",
+          "spring-framework" : "5.3.x",
+          "spring-boot" : "3.5.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "1.3.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "2.0.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.5.x",
+          "spring-framework" : "5.3.x",
+          "spring-boot" : "3.5.x",
+          "micrometer" : "1.15.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    },
+    "2.0.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : {
+        "version" : "2.1.x",
+        "project" : null
+      },
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.6.x",
+          "spring-boot" : "4.0.x"
+        },
+        "excludedArtifacts" : [
+          "net.ttddyy.observation:datasource-micrometer-opentelemetry"
+        ]
+      }
+    },
+    "2.1.x" : {
+      "recipes" : [ ],
+      "nextRewrite" : null,
+      "requirements" : {
+        "supportedJavaVersions" : {
+          "minor" : 17
+        },
+        "supportedGenerations" : {
+          "micrometer-tracing" : "1.6.x",
+          "spring-boot" : "4.0.x",
+          "micrometer" : "1.16.x"
+        },
+        "excludedArtifacts" : [ ]
+      }
+    }
+  }
+}
