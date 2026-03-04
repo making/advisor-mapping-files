@@ -1,0 +1,405 @@
+{
+  "slug": "spring-batch-migration-helper",
+  "coordinates": [
+    "am.ik.spring:spring-batch-migration-helper"
+  ],
+  "repositoryUrl": "https://github.com/making/spring-batch-migration-helper",
+  "rewrite": {
+    "0.1.x": {
+      "recipes": [
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.Job",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.Job"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobExecution",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.JobExecution"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobExecutionException",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.JobExecutionException"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobInstance",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.JobInstance"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobInterruptedException",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.JobInterruptedException"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobKeyGenerator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.JobKeyGenerator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.DefaultJobKeyGenerator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.DefaultJobKeyGenerator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.StartLimitExceededException",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.StartLimitExceededException"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.UnexpectedJobExecutionException",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.UnexpectedJobExecutionException"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobParameter",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.JobParameter"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobParameters",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.JobParameters"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobParametersBuilder",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.JobParametersBuilder"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobParametersIncrementer",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.JobParametersIncrementer"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobParametersValidator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.JobParametersValidator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.CompositeJobParametersValidator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.CompositeJobParametersValidator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.DefaultJobParametersValidator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.DefaultJobParametersValidator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.InvalidJobParametersException",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.InvalidJobParametersException"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.launch.support.RunIdIncrementer",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.RunIdIncrementer"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.job.launch.support.DataFieldMaxValueJobParametersIncrementer",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.job.parameters.DataFieldMaxValueJobParametersIncrementer"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.Step",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.step.Step"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.StepContribution",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.step.StepContribution"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.StepExecution",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.step.StepExecution"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.ChunkListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.ChunkListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.ItemProcessListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.ItemProcessListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.ItemReadListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.ItemReadListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.ItemWriteListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.ItemWriteListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.JobExecutionListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.JobExecutionListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.SkipListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.SkipListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.StepExecutionListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.StepExecutionListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.StepListener",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.listener.StepListener"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.partition.support.Partitioner",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.partition.Partitioner"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.partition.support.PartitionNameProvider",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.partition.PartitionNameProvider"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.partition.support.PartitionStep",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.partition.PartitionStep"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.partition.support.StepExecutionAggregator",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.partition.StepExecutionAggregator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangePackage",
+          "params": {
+            "oldPackageName": "org.springframework.batch.core.explore",
+            "newPackageName": "org.springframework.batch.core.repository.explore",
+            "recursive": true
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.JdbcExecutionContextDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.jdbc.JdbcExecutionContextDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.JdbcJobExecutionDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.jdbc.JdbcJobExecutionDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.JdbcJobInstanceDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.jdbc.JdbcJobInstanceDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.JdbcStepExecutionDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.jdbc.JdbcStepExecutionDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.MongoExecutionContextDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.mongo.MongoExecutionContextDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.MongoJobExecutionDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.mongo.MongoJobExecutionDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.MongoJobInstanceDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.mongo.MongoJobInstanceDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.MongoStepExecutionDao",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.mongo.MongoStepExecutionDao"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.MongoSequenceIncrementer",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.dao.mongo.MongoSequenceIncrementer"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.support.JobRepositoryFactoryBean",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.support.JdbcJobRepositoryFactoryBean"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.core.repository.explore.support.JobExplorerFactoryBean",
+            "newFullyQualifiedTypeName": "org.springframework.batch.core.repository.explore.support.JdbcJobExplorerFactoryBean"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeType",
+          "params": {
+            "oldFullyQualifiedTypeName": "org.springframework.batch.integration.chunk.ChunkHandler",
+            "newFullyQualifiedTypeName": "org.springframework.batch.integration.chunk.ChunkRequestHandler"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeMethodName",
+          "params": {
+            "methodPattern": "org.springframework.batch.core.step.job.JobStep setJobLauncher(org.springframework.batch.core.launch.JobLauncher)",
+            "newMethodName": "setJobOperator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangeMethodName",
+          "params": {
+            "methodPattern": "org.springframework.batch.core.step.builder.JobStepBuilder launcher(org.springframework.batch.core.launch.JobLauncher)",
+            "newMethodName": "operator"
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangePackage",
+          "params": {
+            "oldPackageName": "org.springframework.batch.item",
+            "newPackageName": "org.springframework.batch.infrastructure.item",
+            "recursive": true
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangePackage",
+          "params": {
+            "oldPackageName": "org.springframework.batch.repeat",
+            "newPackageName": "org.springframework.batch.infrastructure.repeat",
+            "recursive": true
+          }
+        },
+        {
+          "name": "org.openrewrite.java.ChangePackage",
+          "params": {
+            "oldPackageName": "org.springframework.batch.support",
+            "newPackageName": "org.springframework.batch.infrastructure.support",
+            "recursive": true
+          }
+        }
+      ],
+      "requirements": {
+        "supportedJavaVersions": {
+          "minor": 17
+        },
+        "supportedGenerations": {
+          "spring-batch": "5.2.x"
+        }
+      },
+      "nextRewrite": {
+        "version": "0.2.x",
+        "project": null
+      }
+    },
+    "0.2.x": {
+      "recipes": [],
+      "requirements": {
+        "supportedJavaVersions": {
+          "minor": 17
+        },
+        "supportedGenerations": {
+          "spring-batch": "6.0.x"
+        }
+      },
+      "nextRewrite": null
+    }
+  }
+}
